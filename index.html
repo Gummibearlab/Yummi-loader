@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Yummi-loader : Less // Css classes for cool web pages">
+    <link rel="stylesheet" type="text/css" media="screen" href="./stylesheets/yummi-loader.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./stylesheets/stylesheet.css">
+    <meta property="og:image" content="http://gummibearlab.github.io/Yummi-loader/facebook.png">
+    <meta property="og:image:type" content="image/jpeg">
+    <title>Yummi-loader</title>
+</head>
+
+<body class="off scale anim_1">
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner scaleInv anim_2"> <a id="forkme_banner" href="https://github.com/Gummibearlab/Yummi-loader" class=" scaleInv anim_4">View on GitHub</a>
+            <h1 id="project_title" class=" scaleInv anim_3">Yummi-loader</h1>
+            <h2 id="project_tagline" class=" scaleInv anim_3">Less//Css classes for fancy page load</h2>
+            <section id="downloads" class=" scaleInv anim_15"> <a class="zip_download_link scaleInv anim_17" href="https://github.com/Gummibearlab/Yummi-loader/zipball/master">Download this project as a .zip file</a> <a class="tar_download_link scaleInv anim_16" href="https://github.com/Gummibearlab/Yummi-loader/tarball/master">Download this project as a tar.gz file</a> </section>
+        </header>
+    </div><!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+        <section id="main_content" class="inner scaleInv anim_3">
+            <h3 class="scaleInv anim_4"><a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"></a>Hello Yummi!</h3>
+
+            <p class="anchor scaleInv anim_5">Hey! What's this? The Yummi-loader is nothing more than a simple LESS file with some CSS3 animations. Use them just adding 'off' class on your body element and changing it with 'on' on $(window).load() or $(document).ready() events. Try it <a class="on_off" style="cursor: pointer;">now</a>.<br>
+            	Browser compatibility IE10+ // Webkit // Firefox <a href="https://coindataflow.com/de/aktie/NOK"><img class="cdf" src="./images/cdf.svg" alt="nokia aktie kurs"></a></p>
+
+            <pre class="scaleInv anim_6">
+<code>&lt;body class=&quot;off&quot;&gt;
+  &lt;div class=&quot;scaleInv anim_1&quot;&gt;
+    &lt;p class=&quot;scaleInv anim_2&quot;&gt;
+      &lt;a class=&quot;scale anim_n&quot;&gt;&lt;/a&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/body&gt;</code></pre>
+
+            <p class="scaleInv anim_7">On this page we toggle on/off class on $(window).load() event.</p>
+
+            <pre class="scaleInv anim_8">
+<code>$(window).load(function() {
+  $('body').toggleClass('on off');
+});</code></pre>
+
+
+
+
+
+            <p class="scaleInv anim_9">You can also use an optional handy little jQuery plugin that waits for animation to end before opening a link. Usage is straightforward just add `.trigger` class to any link you wish to apply this effect to.</p>
+
+            <pre class="scaleInv anim_10">
+<code>&lt;a class=&quot;trigger&quot; href=&quot;example.html&quot;&gt;I'm a fancy link&lt;/a&gt;</code></pre>
+
+			<p class="scaleInv anim_11">Configuring the LESS file is easy, just choose the number of elements you are working with, the delay between each other and your are good to go.</p>
+
+            <pre class="scaleInv anim_12">
+<code>@iterations:	15;	// number of elements to apply effects on
+@delay:		0.15;	// delay between elements transitions</code></pre>
+
+            <p class="scaleInv anim_13">There are some other options you can set too, it's up to you. </p>
+
+            <pre class="scaleInv anim_14">
+<code>@opacity_start: 		0;
+@opacity_finish:		1;
+@opacity_speed_in:		0.5s; 	// seconds
+@opacity_speed_out:		0.5s; 	// seconds
+@opacity_delay_in:		0.5s; 	// seconds
+@opacity_delay_out:		0.5s; 	// seconds
+@opacity_easing_in: 		cubic-bezier(0,0,1,1);
+@opacity_easing_out:		cubic-bezier(0,0,1,1);</code></pre>
+
+            <p class="scaleInv anim_15">
+            	Yummi-loader uses lesshat mixing, you can download it. <br>
+            	You can compile LESS files using one of these compilers</a>.
+            </p>
+
+            <h3 class="scaleInv anim_16"><a name="support-or-contact" class="anchor" href="#support-or-contact"></a>Support or Contact</h3>
+
+            <p class="scaleInv anim_17">Having trouble or suggestions? Tweet me</p>
+
+        </section>
+    </div><!-- FOOTER -->
+    <div id="footer_wrap" class="outer">
+        <footer class="inner scaleInv anim_2">
+            <p class="copyright scaleInv anim_18">Yummi-loader maintained by <a href="https://github.com/Gummibearlab" target="_blank">Gummibearlab</a></p>
+            <p class=" scaleInv anim_19">Published with <a href="http://pages.github.com" target="_blank">GitHub Pages</a></p>
+        </footer>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript">
+    </body>
+</html>
